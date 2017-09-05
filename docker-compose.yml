@@ -1,0 +1,16 @@
+version: '3'
+services:
+  test-nginx:
+    image: nginx:latest
+    container_name: stepik.web-tech
+    volumes:
+      - ./public:/usr/share/nginx/html:ro
+      - ./etc/nginx.conf:/etc/nginx/sites-enabled/test.conf:ro
+    ports:
+      - "9082:80"
+    network_mode: "bridge"
+    # command: ["nginx"]
+    # restart: always
+    # domainname: foo.com
+    # hostname: nginx-host
+    mac_address: 02:42:ac:11:65:45
