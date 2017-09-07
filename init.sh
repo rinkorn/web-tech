@@ -1,4 +1,4 @@
-# ln -s /home/box/web/etc/nginx.conf /etc/nginx/sites-enabled/test.conf
+# ln -sf /home/box/web/etc/nginx.conf  /etc/nginx/sites-enabled/default
 # /etc/init.d/nginx restart
 
-# git clone https://github.com/your_account/stepic_web_project.git /home/box/web
+# https://github.com/search?utf8=✓&q=stepic_web_project

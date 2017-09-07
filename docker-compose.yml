@@ -6,7 +6,7 @@ services:
     volumes:
       - ./:/home/box/web/:ro
       - ./etc/nginx.conf:/etc/nginx/sites-enabled/test.conf:ro
-      - ./etc/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./etc/nginx.conf:/etc/nginx/test.conf:ro
     ports:
       - "9082:80"
     network_mode: "bridge"
